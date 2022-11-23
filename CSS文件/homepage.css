@@ -1,0 +1,55 @@
+body {
+    background-image: url(../background.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.head {
+    color: rgb(161, 249, 255);
+    text-align: center;
+    font-size: 33px;
+}
+
+.h3 {
+    color: rgb(255, 252, 157);
+    text-indent: 2em;
+    font-size: 28px;
+}
+
+#myname {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(51, 133, 255);
+    font-size: 24px;
+}
+
+#nameTwo {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(78, 255, 51);
+    font-size: 24px;
+}
+
+#nameThree {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(228, 51, 255);
+    font-size: 24px;
+}
+
+#myname:hover {
+    color: rgb(223, 251, 98);
+}
+
+#nameTwo:hover {
+    color: rgb(98, 251, 248);
+}
+
+#nameThree:hover {
+    color: rgb(251, 110, 110);
+}
+
+h3 {
+    text-align: center;
+}

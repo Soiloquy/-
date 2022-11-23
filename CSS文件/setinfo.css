@@ -1,0 +1,21 @@
+body {
+    background-image: url(../background.jpg);
+    background-repeat: no-repeat;
+    background-position: 30px left;
+    font-family: "楷体";
+    text-align: center;
+}
+
+h1 {
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.div1 {
+    height: 400px;
+    background-color: rgba(112, 215, 253, 0.3);
+}
+
+table {
+    margin: auto;
+}

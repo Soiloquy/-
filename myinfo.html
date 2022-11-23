@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myinfo</title>
+    <link rel="stylesheet" href="CSS文件/myinfo.css">
+</head>
+
+<body>
+    <h1>大家好</h1>
+    <h2>My name is <span id="myname"></span></h2>
+    <p id="myintor">自我介绍</p>
+</body>
+
+<script>
+    let i = 0
+    let url = decodeURI(window.location.href);
+    let argsIndex = url.split("?i=");
+    i = argsIndex[1]
+    //获取名字
+    let myname = document.getElementById('myname');
+    myname.innerText = localStorage.getItem('name' + i);
+    //获取介绍
+    let myintor = document.getElementById('myintor');
+    myintor.innerText = localStorage.getItem('intor' + i)
+</script>
+
+</html>

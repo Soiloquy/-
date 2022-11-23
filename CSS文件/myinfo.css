@@ -1,0 +1,30 @@
+body {
+    background-image: url(../background.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(237, 219, 191);
+    font-weight: 400;
+}
+
+h2 {
+    text-indent: 2em;
+    font-size: 30px;
+    font-weight: 400;
+    color: aqua;
+}
+
+h2 span {
+    color: rgb(255, 159, 159);
+    font-family: "宋体";
+    font-size: 35px;
+}
+
+p {
+    color: rgb(147, 254, 190);
+    font-size: 24px;
+}

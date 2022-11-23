@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setinfo</title>
+    <link rel="stylesheet" href="CSS文件/setinfo.css">
+</head>
+
+<body>
+    <h1>注册页面</h1>
+    <div class="div1">
+        <table width="400px" height="200px" border="1" cellspacing="0">
+            <tr>
+                <td>名字</td>
+                <td><input type="text" name="" id="myname" placeholder="请输入名字"></td>
+            </tr>
+            <tr>
+                <td>介绍内容</td>
+                <td><textarea rows="3" cols="20" name="" id="myintor" placeholder="请输入介绍"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" name="" id="" value="提交" onclick="setinfo()">
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+<script>
+    let myname = document.getElementById('myname')
+    let myintor = document.getElementById('myintor')
+    function setinfo() {
+        let i;
+        for (i = 0; i >= 0;) {
+            let ifname = localStorage.getItem('name' + i)
+            if (localStorage.getItem('name' + i) != null) {
+                //自定义代码
+                i++;
+                console.log('key 存在' + 'key的值为' + ifname)
+
+                continue;
+            } else {
+                console.log('key 不存在')
+                localStorage.setItem('name' + i, myname.value)
+                localStorage.setItem('intor' + i, myintor.value)
+                myname.value = ''
+                myintor.value = ''
+                break;
+            }
+        }
+    }
+</script>
+
+</html>
